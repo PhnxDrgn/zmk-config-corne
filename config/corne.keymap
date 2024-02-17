@@ -57,8 +57,8 @@
                                         // ┃         │         │  LALT   │  ESC    │  DEL    ┃     ┃         │         │         │         │         │
                                 &trans       &trans    &trans    &kp LALT  &kp ESC   &kp DEL         &trans    &trans    &trans    &trans    &trans     &trans
                                         // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        //                     │         │         │         │     │         │         │         │          
-                                                                 &trans    &trans    &trans          &trans    &trans    &trans
+                                        //                     │         │         │         │     │  RET    │         │         │          
+                                                                 &trans    &trans    &trans          &kp RET   &trans    &trans
                                         // 
                         >;
                 };
