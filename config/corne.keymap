@@ -33,32 +33,32 @@
                                         // ┃  Q      │  W      │  F      │  P      │  B      ┃     ┃  J      │  L      │  U      │  Y      │  ;      ┃
                                 &trans       &kp Q     &kp W     &kp F     &kp P     &kp B           &kp J     &kp L      &kp U    &kp Y     &kp SEMI  &trans
                                         // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        // ┃  A      │  R      │  S      │  T      │  G      ┃     ┃  M      │  N      │  E      │  I      │  O      │
+                                        // ┃  A      │  R      │  S      │  T      │  G      ┃     ┃  M      │  N      │  E      │  I      │  O      ┃
                                 &trans       &kp A     &kp R     &kp S     &kp T     &kp G           &kp M     &kp N      &kp E    &kp I     &kp O     &trans
                                         // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        // ┃  Z      │  X      │  C      │  D      │  V      ┃     ┃  K      │  H      │  ,      │  .      │  /      │
+                                        // ┃  Z      │  X      │  C      │  D      │  V      ┃     ┃  K      │  H      │  ,      │  .      │  /      ┃
                                 &trans       &kp Z     &kp X     &kp C     &kp D     &kp V           &kp K     &kp H     &kp COMMA &kp DOT   &kp FSLH  &trans
                                         // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        //                     │ LCTRL   │ LWR     │ SHFT    │     │ SPC     │ RSE     │ BSPC    │          
-                                                                 &kp LCTRL &mo 1     &kp LSHFT       &kp SPACE &mo 2     &kp BSPC
+                                        //                     ┃ LCTRL   │ LWR     │ SHFT    ┃     ┃ SPC     │ RSE     │ RALT    ┃          
+                                                                 &kp LCTRL &mo 1     &kp LSHFT       &kp SPACE &mo 2     &kp RALT
                                         //                     ┗━━━━━━━━━┷━━━━━━━━━┷━━━━━━━━━┛     ┗━━━━━━━━━┷━━━━━━━━━┷━━━━━━━━━┛
                         >;
                 };
                 lower_layer {
 
                         bindings = <                        
-                                        // ┏━━━━━━━━━┯━━━━━━━━━┯━━━━━━━━━┯━━━━━━━━━┯━━━━━━━━━┓     ┏━━━━━━━━━━━━━┯━━━━━━━━━━━━━┯━━━━━━━━━━━━━┯━━━━━━━━━━━━━┯━━━━━━━━━━━━━┓
-                                        // ┃  1      │  2      │  3      │  4      │  5      ┃     ┃  6          │  7          │  8          │  9          │  0          ┃
-                                &trans       &kp N1    &kp N2    &kp N3    &kp N4    &kp N5          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &trans
-                                        // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨
-                                        // ┃ GUI     │         │         │         │         ┃     ┃  LEFT       │  DOWN       │  UP         │  RIGHT      │  '          │
-                                &trans       &kp LGUI  &trans    &trans    &trans    &trans          &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp SQT       &trans
-                                        // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨
-                                        // ┃         │         │  LALT   │  ESC    │  DEL    ┃     ┃  BT0        │  BT1        │  BT2        │  BT3        │  BT4        │
-                                &trans       &trans    &trans    &kp LALT  &kp ESC   &kp DEL         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
-                                        // ┠─────────┼─────────┼─────────┼─────────┼─────────┨     ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨
-                                        //                     │         │         │         │     │  RET        │             │         │          
-                                                                 &trans    &trans    &trans          &kp RET       &trans        &trans
+                                        // ┏━━━━━━━━━━━━━┯━━━━━━━━━━━━━┯━━━━━━━━━━━━━┯━━━━━━━━━━━━━┯━━━━━━━━━━━━━┓     ┏━━━━━━━━━━┯━━━━━━━━━━┯━━━━━━━━━━┯━━━━━━━━━━┯━━━━━━━━━━┓
+                                        // ┃  1          │  2          │  3          │  4          │  5          ┃     ┃  6       │  7       │  8       │  9       │  0       ┃
+                                &trans       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5              &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
+                                        // ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨     ┠──────────┼──────────┼──────────┼──────────┼──────────┨
+                                        // ┃  BT0        │  BT1        │  BT2        │  BT3        │  BT4        ┃     ┃  LEFT    │  DOWN    │  UP      │  RIGHT   │  '       ┃
+                                &trans       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SQT    &trans
+                                        // ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨     ┠──────────┼──────────┼──────────┼──────────┼──────────┨
+                                        // ┃  GUI        │             │             │  ESC        │  DEL        ┃     ┃          │          │          │          │          ┃
+                                &trans       &kp LGUI      &trans        &trans        &kp ESC       &kp DEL             &trans     &trans     &trans     &trans     &trans     &trans
+                                        // ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨     ┠──────────┼──────────┼──────────┼──────────┼──────────┨
+                                        //                             ┃             │             │             ┃     ┃  BSPC    │          │          ┃          
+                                                                         &trans        &trans        &trans              &kp BSPC    &trans     &trans
                                         // 
                         >;
                 };
@@ -68,13 +68,13 @@
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |  `  |  ~  |  '  |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI |     | RET |   | ENT |     | ALT |
 
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &kp GRAVE   &kp TILDE &kp SQT   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp LSHFT   &kp RET   &trans    &kp RALT
+                             &kp LGUI &trans   &kp RET   &kp RET   &trans    &kp RALT
                         >;
                 };
 
@@ -84,13 +84,13 @@
                                         // ┃  BT1        │  BT2        │  BT3        │  BT4        │  BT5        ┃     ┃  7      │  8      │  9      │  0      │  .      ┃
                                 &kp TAB     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &kp N7     &kp N8    &kp N9    &kp N0    &kp DOT   &kp BSPC
                                         // ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        // ┃  BTCLR      │  S          │  D          │  F          │  G          ┃     ┃  4      │  5      │  6      │  -      │  /      │
+                                        // ┃  BTCLR      │  S          │  D          │  F          │  G          ┃     ┃  4      │  5      │  6      │  -      │  /      ┃
                                 &kp LCTRL    &bt BT_CLR    &kp S        &kp D         &kp F         &kp G               &kp N4    &kp N5    &kp N6    &kp MINUS &kp FSLH  &kp SQT
                                         // ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        // ┃  Z          │  X          │  C          │  V          │  B          ┃     ┃  1      │  2      │  3      │  +      │  *      │
+                                        // ┃  Z          │  X          │  C          │  V          │  B          ┃     ┃  1      │  2      │  3      │  +      │  *      ┃
                                 &kp LSHFT    &kp Z         &kp X         &kp C         &kp V         &kp B               &kp N1     &kp N2    &kp N3   &kp PLUS  &kp KP_MULTIPLY  &kp ESC
                                         // ┠─────────────┼─────────────┼─────────────┼─────────────┼─────────────┨     ┠─────────┼─────────┼─────────┼─────────┼─────────┨
-                                        //                             │ GUI         │ LWR         │ SHFT        │     │ ENT     │ RSE     │ BSPC    │          
+                                        //                             ┃ GUI         │ LWR         │ SHFT        ┃     ┃ ENT     │ RSE     │ BSPC    ┃          
                                                                         &kp LGUI       &mo 1         &kp LSHFT           &kp RET  &mo 2      &kp BSPC
                                         //                             ┗━━━━━━━━━━━━━┷━━━━━━━━━━━━━┷━━━━━━━━━━━━━┛     ┗━━━━━━━━━┷━━━━━━━━━┷━━━━━━━━━┛
                         >;
